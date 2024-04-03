@@ -5,12 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link href="./font/PT Root UI/PT-Root-UI_Bold.ttf">
+    <link href="./font/PT Root UI/PT-Root-UI_Light.ttf">
+    <link href="./font/PT Root UI/PT-Root-UI_Medium.ttf">
+    <link href="./font/PT Root UI/PT-Root-UI_Regular.ttf">
+    <link href="./font/PT Root UI/PT-Root-UI_VF.ttf">
     <title>Sale Discount</title>
 </head>
 <body>
     <header class="header">
         <div class="container header__container">
-            <p>Скидка действует: <span>09</span> : <span>59</span> </p>
+            <p>Скидка действует: <span id="timer">9:59</span> </p>
         </div>
     </header>
     <main class="main">
@@ -23,7 +28,55 @@
                     </div>
                     <div class="tariff__box">
                         <div class="tariff__texture"></div>
-                        <div class="tariff__blocks"></div>
+                        <div class="tariff__blocks">
+                            <div class="tariff__blocks__items">
+                                <div class="tariff__blocks__item-bgcolor tariff__blocks__item-done">
+                                    <div class="sale-30"></div>
+                                    <h3 class="tariff__blocks__item__title">1 неделя</h3>
+                                    <div class="tariff__blocks__items_prises">
+                                        <div class="tariff__blocks__item_price_up">699₽</div>
+                                        <div class="tariff__blocks__item_price_down">999₽</div>
+                                    </div>
+                                    <p class="tariff__blocks__item__description">Чтобы просто <br> начать 👍</p>
+                                </div>
+                                <div class="tariff__blocks__item tariff__blocks__item-bgcolor--white">
+                                    <div class="sale-40"></div>
+                                    <h3 class="tariff__blocks__item__title">1 месяц</h3>
+                                    <div class="tariff__blocks__items_prises">
+                                        <div class="tariff__blocks__item_price_up">999₽</div>
+                                        <div class="tariff__blocks__item_price_down">1690₽</div>
+                                    </div>
+                                    <p class="tariff__blocks__item__description">Привести тело <br> впорядок 💪</p>
+                                </div>
+                                <div class="tariff__blocks__item tariff__blocks__item-bgcolor--white">
+                                    <div class="sale-50"></div>
+                                    <h3 class="tariff__blocks__item__title">3 месяца</h3>
+                                    <div class="tariff__blocks__items_prises">
+                                        <div class="tariff__blocks__item_price_up">2990₽</div>
+                                        <div class="tariff__blocks__item_price_down">5990₽</div>
+                                    </div>
+                                    <p class="tariff__blocks__item__description">Изменить <br> образ жизни 🔥</p>
+                                </div>
+                            </div>
+                            <div class="tariff__blocks__banner">
+                                <div class="sale-70"></div>
+                                <p class="tariff__blocks__banner_title">Навсегда</p>
+                                <div>
+                                    <div class="tariff__blocks__banner_up">5990₽</div>
+                                    <div class="tariff__blocks__banner_down">18990₽</div>
+                                </div>
+                                <p class="tariff__blocks__banner_description">Всегда быть в форме <br> и поддерживать своё <br> здоровье ⭐</p>
+                            </div>
+                            <p class="tariff__blocks_text">Следуя плану на 3 месяца, люди получают в 2 раза лучший результат, <br> чем за 1 месяц</p>
+                            <div class="tariff__blocks__banner_check">
+                                <label class="check_container">Я соглашаюсь с <a href="#">Правилами сервиса</a> и условиями <br> <a href="#">Публичной оферты</a>
+                                    <input type="checkbox" checked="checked">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </div>
+                            <a class="tariff__blocks__banner__btn" href="#">Купить</a>
+                            <p class="tariff__blocks__banner_text2">Нажимая купить, пользователь соглашается на автоматическое описание денежных <br> средств по истечению купленного периода. Дальнейшие описания по тарифам <br> участвующим в акции осуществляется по полной стоймости согласно оферте.</p>
+                        </div>
                     </div>
                 </div>
             </div>
